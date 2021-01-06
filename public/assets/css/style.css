@@ -1,4 +1,18 @@
 @media (max-width: 579px) { 
+    .in{
+        min-width: 100% !important;
+    }
+
+    .card{
+        margin-top: 20px;
+    }
+    .btn-outline-primary {
+        min-width: 100% !important;
+    }
+
+}
+
+@media (max-width: 579px) { 
     .responsive{
         min-width: 100% !important;
 
