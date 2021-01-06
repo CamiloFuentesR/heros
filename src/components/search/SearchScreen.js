@@ -25,7 +25,6 @@ export const SearchScreen = ({ history }) => {
         console.log(description)
 
         history.push(`?q=${description}`)
-        reset();
         
     }
 
