@@ -13,7 +13,7 @@ export const SearchScreen = ({ history }) => {
     console.log(q)
 
 
-    const [{ description }, handleInputChange,reset] = useForm({
+    const [{ description }, handleInputChange] = useForm({
         description: q
     });
 
