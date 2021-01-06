@@ -17,7 +17,7 @@ export const HeroCard = ({
                         <div className="card-body col-15" style={{ minHeight: 150 }}>
                             <h5 className="card-title">{superhero}</h5>
                             <p className="card-text">
-                                {characters}
+                                {characters.substr(0,30)+'...'}
                             </p>
                             {/* {
                             (alter_ego!== characters)
