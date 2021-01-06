@@ -10,7 +10,7 @@ export const SearchScreen = ({ history }) => {
 
     //aqui se puede agregar un use memo para que solo se ejecute cuando cambia
     const { q = '' } = queryString.parse(location.search);
-    console.log(q)
+    console.log(location)
 
 
     const [{ description }, handleInputChange] = useForm({

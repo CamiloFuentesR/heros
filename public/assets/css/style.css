@@ -3,10 +3,12 @@
         min-width: 100% !important;
     }
 
-    .card{
-        margin-top: 20px;
-    }
+  
     .btn-outline-primary {
+        min-width: 100% !important;
+    }
+    .search {
+        margin-top: 50px;
         min-width: 100% !important;
     }
 
