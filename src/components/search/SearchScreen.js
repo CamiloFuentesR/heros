@@ -22,7 +22,7 @@ export const SearchScreen = ({ history }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(description)
+        console.log(history)
 
         history.push(`?q=${description}`)
         

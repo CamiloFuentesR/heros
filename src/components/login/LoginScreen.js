@@ -4,7 +4,6 @@ export const LoginScreen = ({history}) => {
 
     const handleLogin = () => {
         history.push('/');
-        console.log(history.location.key)
         // history.replace('/'); al estar autenticado no puedes volver al login a menos que presioes logout
     }
 
