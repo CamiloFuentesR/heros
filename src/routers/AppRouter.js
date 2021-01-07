@@ -9,7 +9,7 @@ import { DashboardRoutes } from "./DashboardRoutes";
 
 export const AppRouter = () => {
     return (
-        <Router>
+        <Router forceRefresh={true}>
             <>
                 <Switch>
                     <Route exact
