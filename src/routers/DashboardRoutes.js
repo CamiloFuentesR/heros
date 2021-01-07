@@ -14,7 +14,7 @@ export const DashboardRoutes = () => {
                 <Switch>
                    
                     <Route exact
-                        path="/marvel"
+                        path="/"
                         component={MarvelScreen}
                     />
                     <Route exact
