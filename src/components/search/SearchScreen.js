@@ -7,27 +7,23 @@ import { useMemo } from 'react';
 
 export const SearchScreen = ({ history }) => {
     const location = useLocation();
-
     //aqui se puede agregar un use memo para que solo se ejecute cuando cambia
+    //location.search me devuelve el queryparam que esta definido en las rutas /:heroeId
     const { q = '' } = queryString.parse(location.search);
-    console.log(location)
-
+    console.log(location.search)
 
     const [{ description }, handleInputChange] = useForm({
         description: q
     });
 
-     const herosFilter = useMemo(() => getHerosByName(q), [q]) ;
-
+    const herosFilter = useMemo(() => getHerosByName(q), [q]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(history)
 
         history.push(`?q=${description}`)
-        
     }
-
     return (
         <div className="row">
             <div className="col-3 in">
@@ -43,7 +39,6 @@ export const SearchScreen = ({ history }) => {
                         value={description}
                         onChange={handleInputChange}
                     />
-
                     <button
                         type="submit"
                         className="btn btn-sm mt-3 btn-outline-primary"
@@ -61,9 +56,7 @@ export const SearchScreen = ({ history }) => {
                         />
                     ))
                 }
-
             </div>
-
         </div>
     )
 }

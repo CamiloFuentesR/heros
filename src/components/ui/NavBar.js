@@ -1,8 +1,27 @@
 import React, { useContext } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useHistory } from 'react-router-dom'
 import { AuthContext } from '../../auth/AuthContext'
+import { types } from '../../types/types'
 
 export const Navbar = () => {
+    const {user:{name},dispatch} = useContext(AuthContext);
+    const history = useHistory();
+
+
+    console.log(history)
+
+    const handleLogout = () => {
+        // history.push('/');
+        // history.replace('/'); //al estar autenticado no puedes volver al login a menos que presioes logout
+       
+        const action = {
+            type: types.logout,
+            payload: user
+        }
+        history.replace('/login');
+        dispatch(action);
+
+    }
 
     
     const {user} = useContext(AuthContext);
@@ -51,16 +70,14 @@ export const Navbar = () => {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
                     <span className="nav-item nav-link text-info">
-                        {user.name}
+                        {name}
                     </span>
-                    <NavLink
-                        activeClassName="active"
-                        className="nav-item nav-link"
-                        exact
-                        to="/login"
+                    <button
+                        className="nav-item nav-link btn btn-outline-dark"
+                        onClick={handleLogout}
                     >
                         Logout
-                </NavLink>
+                </button>
                 </ul>
             </div>
         </nav>

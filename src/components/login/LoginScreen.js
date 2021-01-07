@@ -4,11 +4,15 @@ import { types } from '../../types/types';
 
 export const LoginScreen = ({history}) => {
 
+    //este es un hook de react-router-dom, y me provee el history ya que el navbar no esta dentro de las rutas, por ende no hereda el history como los otros componentes, esta es la solucion sencila
+    console.log(history)
+
     const {dispatch} = useContext(AuthContext);
 
     const handleLogin = () => {
         // history.push('/');
         // history.replace('/'); //al estar autenticado no puedes volver al login a menos que presioes logout
+        //se puede hacer destructuring en el use cotnext => ej: en el componente navBar ;)
         const user = {
             name: 'Camilo F',
         }
@@ -16,8 +20,8 @@ export const LoginScreen = ({history}) => {
             type: types.login,
             payload: user
         }
-        dispatch(action);
         history.replace('/');
+        dispatch(action);
 
     }
     
