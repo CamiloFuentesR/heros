@@ -9,7 +9,7 @@ import { DashboardRoutes } from "./DashboardRoutes";
 
 export const AppRouter = () => {
     return (
-        <Router basename={'heroesearch.netlify.app'}>
+        <Router >
             <>
                 <Switch>
                     <Route exact
