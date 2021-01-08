@@ -31,7 +31,7 @@ export const LoginScreen = ({history}) => {
     
 
     return (
-        <div className="container">
+        <div className="container animate__animated animate__slideInDown">
             <h1>Login</h1>
             <hr/>
             <button
