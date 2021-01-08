@@ -71,7 +71,7 @@ export const Navbar = () => {
                         {name}
                     </span>
                     <button
-                        className="nav-item nav-link btn btn-outline-dark logout"
+                        className="nav-item nav-link btn btn-outline-dark logout btn1"
                         onClick={handleLogout}
                     >
                         Logout
