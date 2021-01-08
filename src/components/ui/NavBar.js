@@ -69,11 +69,11 @@ export const Navbar = () => {
 
             <div className="navbar-collapse   order-3 dual-collapse2 nav2">
                 <ul className="navbar-nav ml-auto nav3 ">
-                    <span className="nav-item nav-link text-info">
+                    <span className="nav-item nav-link text-info name">
                         {name}
                     </span>
                     <button
-                        className="nav-item nav-link btn btn-outline-dark"
+                        className="nav-item nav-link btn btn-outline-dark logout"
                         onClick={handleLogout}
                     >
                         Logout

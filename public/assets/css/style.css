@@ -5,9 +5,8 @@
 
     .abc{
         display: grid ;
-        grid-template-columns: 1fr 2fr !important;
+        grid-template-columns: 2fr 1fr !important;
         grid-template-rows: 1fr 1fr !important;
-        align-content: center;
         max-height: 100%;
         /* background-color: blue !important; */
 
@@ -21,12 +20,15 @@
         max-width: 100%;
         /* background-color:brown; */
         float: left;
+        grid-area: 2 / 1;
+
 
     }
     .nav12{
         display: grid;
         text-align: center;
         grid-template-columns: 1fr 1fr 1fr;
+        
         /* background-color: cadetblue; */
 
     }
@@ -37,8 +39,10 @@
         float: right;
         margin-left: 5px;
         margin-top: 2px;
-        grid-column: 2 /2;
-    }
+        /* grid-area: 1 / 2; */
+
+     }
+   
     span{
         margin-top: -0.1px;
     }
@@ -47,7 +51,8 @@
         display: grid;
         float: right;
         max-width: 100%;
-        grid-template-columns: 1fr 1fr !important;
+        /* grid-template-columns: 1fr 1fr !important; */
+        grid-area: 2 / 3;
     }
 
     .nav-item{
