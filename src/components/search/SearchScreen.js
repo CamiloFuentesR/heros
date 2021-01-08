@@ -25,7 +25,7 @@ export const SearchScreen = ({ history }) => {
         history.push(`?q=${description}`)
     }
     return (
-        <div className="row">
+        <div className="row animate__animated animate__fadeIn">
             <div className="col-3 in">
                 <h4>Search Form</h4>
                 <hr />
@@ -47,7 +47,7 @@ export const SearchScreen = ({ history }) => {
                 </form>
 
             </div>
-            <div className="col-9 search animate__animated animate__fadeIn">
+            <div className="col-9 search ">
                 {
                     herosFilter.map(hero => (
                         <HeroCard
