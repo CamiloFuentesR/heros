@@ -47,7 +47,7 @@ export const SearchScreen = ({ history }) => {
                 </form>
 
             </div>
-            <div className="col-9 search">
+            <div className="col-9 search animate__animated animate__fadeIn">
                 {
                     herosFilter.map(hero => (
                         <HeroCard
