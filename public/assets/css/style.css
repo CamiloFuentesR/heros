@@ -5,7 +5,7 @@
 
     .abc{
         display: grid ;
-        grid-template-columns: 1fr 2fr 3fr !important;
+        grid-template-columns: 1fr 2fr 2fr !important;
         grid-template-rows: 1fr !important;
         align-content: center;
         max-height: 100%;
@@ -14,7 +14,7 @@
     }
     .navbar-brand{
         /* background-color: black !important; */
-        font-size: 13px;
+        font-size: 15px;
 
     }
     .nav1{
