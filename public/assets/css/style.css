@@ -230,7 +230,7 @@
     .nav12{
         display: grid;
         text-align: left;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
     }
     .logout{
         grid-column: 9/10;
