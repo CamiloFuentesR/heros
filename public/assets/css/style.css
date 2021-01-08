@@ -5,7 +5,7 @@
 
     .abc{
         display: grid ;
-        grid-template-columns: 2fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 1fr 1fr !important;
         max-height: 100%;
         /* background-color: blue !important; */
@@ -26,7 +26,7 @@
     }
     .nav12{
         display: grid;
-        text-align: center;
+        text-align: left;
         grid-template-columns: 1fr 1fr 1fr;
         
         /* background-color: cadetblue; */
@@ -51,7 +51,7 @@
         display: grid;
         float: right;
         max-width: 100%;
-        /* grid-template-columns: 1fr 1fr !important; */
+         grid-template-columns: 1fr 1fr !important; */
         grid-area: 2 / 3;
     }
 
@@ -62,9 +62,7 @@
     .navbar-collapse{
         float: left !important;
     }
-    .nav-link{
-    
-    }
+        
   
     .btn-outline-primary {
         min-width: 100% !important;
