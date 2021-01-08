@@ -14,7 +14,7 @@ export const LoginScreen = ({history}) => {
         // history.replace('/'); //al estar autenticado no puedes volver al login a menos que presioes logout
         //se puede hacer destructuring en el use cotnext => ej: en el componente navBar ;)
         const user = {
-            name: 'Camilo F',
+            name: 'Camilo Fuentes',
         }
         const action = {
             type: types.login,

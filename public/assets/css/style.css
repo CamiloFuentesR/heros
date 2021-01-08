@@ -5,8 +5,8 @@
 
     .abc{
         display: grid ;
-        grid-template-columns: 1fr 2fr 2fr !important;
-        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 2fr !important;
+        grid-template-rows: 1fr 1fr !important;
         align-content: center;
         max-height: 100%;
         /* background-color: blue !important; */
@@ -33,21 +33,21 @@
 
     .nav2{
         /* background-color: blueviolet; */
+        display: grid;
+        float: right;
         margin-left: 5px;
         margin-top: 2px;
-
+        grid-column: 2 /2;
     }
     span{
         margin-top: -0.1px;
-
     }
 
     .nav3{
         display: grid;
-        float: left;
+        float: right;
         max-width: 100%;
         grid-template-columns: 1fr 1fr !important;
-
     }
 
     .nav-item{
