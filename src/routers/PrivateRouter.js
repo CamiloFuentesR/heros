@@ -7,8 +7,9 @@ export const PrivateRouter = ({
     component: Component,
     ...rest
 }) => {
-
-    localStorage.setItem('lastPath',rest.location.pathname);
+    const{location:{pathname,search}} = rest;
+    //el search es el queryparam cuando se hacen busquedas
+    localStorage.setItem('lastPath',pathname+search);
     return (
         <Route {...rest}
             component={(props) => (
