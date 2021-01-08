@@ -6,8 +6,6 @@ export const HeroScreen = ({ history }) => {
 
     //heroid es sacado del path de las rutas
     const { heroeId } = useParams();
-    console.log(heroeId)
-    console.log(history)
     // const hero = getHerosById(heroeId);
     const hero =useMemo(() => getHerosById(heroeId), [heroeId])
 
