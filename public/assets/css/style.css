@@ -77,7 +77,73 @@
         min-width: 100% !important;
     }
 
-
+    @media(min-width:580px) and (max-width: 700px){
+        .responsive{
+            min-width: 50% !important ;
+            min-height: 185px !important;
+            
+        }
+        .card{
+           min-width: 50% !important;
+           min-height: 185px !important;
+       }
+       .search{
+           /* background-color: aqua; */
+           
+       }
+       .search .responsive{
+           /* background-color: blue; */
+           min-width: 100%;
+           align-content: center;
+       }
+       .search .card{
+           min-width: 100%;
+           margin-right: -200px;
+   
+       }
+       .nav12{
+           display: grid;
+           text-align: left;
+           grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr  ;
+       }
+       .logout{
+           grid-column: 7/8;
+       }
+       .name{
+           grid-column: 6/7;
+       }
+       .btn1{
+           color: gray;
+       }
+       .nav2{
+           /* background-color: blueviolet; */
+           margin-left: 5px;
+           margin-top: 2px;
+           /* grid-area: 1 / 2; */
+   
+        }
+      
+       span{
+           margin-top: -0.1px;
+       }
+   
+       .nav3{
+       }
+       .logout{
+           display: grid;
+       }
+   
+       .nav-item{
+           max-width: 100%;
+           font-size: 12px;
+       }
+       .navbar-collapse{
+           float: left !important;
+       }
+       
+    }
+    
+    }
 
  @media(min-width:580px) and (max-width: 1000px){
      .responsive{
