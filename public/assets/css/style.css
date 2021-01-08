@@ -3,6 +3,57 @@
         min-width: 100% !important;
     }
 
+    .abc{
+        display: grid ;
+        grid-template-columns: 1fr 1.7fr 2fr !important;
+        grid-template-rows: 1fr !important;
+        align-content: center;
+        max-height: 100%;
+        /* background-color: blue !important; */
+
+    }
+    .navbar-brand{
+        /* background-color: black !important; */
+
+    }
+    .nav1{
+        max-width: 100%;
+        /* background-color:brown; */
+        float: left;
+
+    }
+    .nav12{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* background-color: cadetblue; */
+
+    }
+
+    .nav2{
+        /* background-color: blueviolet; */
+        margin-left: 5px;
+
+    }
+
+    .nav3{
+        display: grid;
+        float: left;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr !important;
+
+    }
+
+    .nav-item{
+        max-width: 100%;
+        font-size: 12px;
+    }
+    .navbar-collapse{
+        float: left !important;
+    }
+    .nav-link{
+    
+    }
   
     .btn-outline-primary {
         min-width: 100% !important;
@@ -14,7 +65,6 @@
 
 }
 
-@media (max-width: 579px) { 
     .responsive{
         min-width: 100% !important;
 
@@ -23,7 +73,6 @@
         min-width: 100% !important;
     }
 
-}
 
 
  @media(min-width:580px) and (max-width: 1000px){

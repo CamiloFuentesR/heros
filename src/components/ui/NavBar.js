@@ -27,7 +27,7 @@ export const Navbar = () => {
     const {user} = useContext(AuthContext);
     console.log(user)
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark abc">
 
             <Link
                 className="navbar-brand"
@@ -36,8 +36,8 @@ export const Navbar = () => {
                 Asociaciones
         </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+            <div className="navbar-collapse nav1 ">
+                <div className="navbar-nav nav12">
 
                     <NavLink
                         activeClassName="active"
@@ -67,8 +67,8 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul className="navbar-nav ml-auto">
+            <div className="navbar-collapse   order-3 dual-collapse2 nav2">
+                <ul className="navbar-nav ml-auto nav3 ">
                     <span className="nav-item nav-link text-info">
                         {name}
                     </span>
