@@ -150,10 +150,7 @@
         min-width: 50% !important;
         min-height: 185px !important;
     }
-    .search{
-        /* background-color: aqua; */
-        
-    }
+  
     .search .responsive{
         /* background-color: blue; */
         min-width: 100%;
@@ -167,7 +164,7 @@
     .nav12{
         display: grid;
         text-align: left;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 6fr 2fr 1fr;
     }
     .logout{
         grid-column: 8/9;
@@ -213,13 +210,7 @@
     .card{
         min-height: 200px;
     }
-    .search{
-        display: grid;
-        /* background-color: aqua; */
-        grid-template-columns: 1fr 1fr; 
-        gap: 50px;
-
-    }
+  
     .search .responsive{
         /* background-color: blue; */
         min-width: 100%;
@@ -230,13 +221,15 @@
     .nav12{
         display: grid;
         text-align: left;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 7fr 2fr 1fr  ;
     }
     .logout{
-        grid-column: 9/10;
+        display: grid;
+        grid-column: 6;
     }
     .name{
-        grid-column: 8/9;
+        display: grid;
+        grid-column: 5;
     }
 
  }
