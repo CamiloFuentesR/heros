@@ -87,10 +87,7 @@
            min-width: 50% !important;
            min-height: 185px !important;
        }
-       .search{
-           /* background-color: aqua; */
-           
-       }
+    
        .search .responsive{
            /* background-color: blue; */
            min-width: 100%;
@@ -126,9 +123,7 @@
        span{
            margin-top: -0.1px;
        }
-   
-       .nav3{
-       }
+      
        .logout{
            display: grid;
        }
@@ -143,9 +138,9 @@
        
     }
     
-    }
+    
 
- @media(min-width:580px) and (max-width: 1000px){
+ @media(min-width:700px) and (max-width: 1000px){
      .responsive{
          min-width: 50% !important ;
          min-height: 185px !important;
