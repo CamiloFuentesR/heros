@@ -5,7 +5,7 @@
 
     .abc{
         display: grid ;
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr !important;
         grid-template-rows: 1fr 1fr !important;
         max-height: 100%;
         /* background-color: blue !important; */
@@ -14,6 +14,7 @@
     .navbar-brand{
         /* background-color: black !important; */
         font-size: 15px;
+        margin-left: 50px;
 
     }
     .nav1{
@@ -27,16 +28,15 @@
     .nav12{
         display: grid;
         text-align: left;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         
-        /* background-color: cadetblue; */
 
     }
-
+    .btn{
+        color: gray;
+    }
     .nav2{
         /* background-color: blueviolet; */
-        display: grid;
-        float: right;
         margin-left: 5px;
         margin-top: 2px;
         /* grid-area: 1 / 2; */
@@ -48,11 +48,9 @@
     }
 
     .nav3{
+    }
+    .logout{
         display: grid;
-        float: right;
-        max-width: 100%;
-         grid-template-columns: 1fr 1fr !important; */
-        grid-area: 2 / 3;
     }
 
     .nav-item{
@@ -108,6 +106,45 @@
         margin-right: -200px;
 
     }
+    .nav12{
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .logout{
+        grid-column: 8/9;
+    }
+    .name{
+        grid-column: 7/8;
+    }
+    .btn{
+        color: gray;
+    }
+    .nav2{
+        /* background-color: blueviolet; */
+        margin-left: 5px;
+        margin-top: 2px;
+        /* grid-area: 1 / 2; */
+
+     }
+   
+    span{
+        margin-top: -0.1px;
+    }
+
+    .nav3{
+    }
+    .logout{
+        display: grid;
+    }
+
+    .nav-item{
+        max-width: 100%;
+        font-size: 12px;
+    }
+    .navbar-collapse{
+        float: left !important;
+    }
     
  }
 
@@ -131,6 +168,17 @@
     }
     .search .card{
         min-width: 30%;
+    }
+    .nav12{
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .logout{
+        grid-column: 9/10;
+    }
+    .name{
+        grid-column: 8/9;
     }
 
  }

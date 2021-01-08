@@ -64,11 +64,9 @@ export const Navbar = () => {
                     >
                         Search
                 </NavLink>
-                </div>
-            </div>
 
-            <div className="navbar-collapse   order-3 dual-collapse2 nav2">
-                <ul className="navbar-nav ml-auto nav3 ">
+           {/*  <div className="navbar-collapse   order-3 dual-collapse2 nav2">
+                <ul className="navbar-nav ml-auto nav3 "> */}
                     <span className="nav-item nav-link text-info name">
                         {name}
                     </span>
@@ -78,8 +76,11 @@ export const Navbar = () => {
                     >
                         Logout
                 </button>
-                </ul>
+            {/*     </ul>
+            </div> */}
             </div>
+            </div>
+
         </nav>
     )
 }
