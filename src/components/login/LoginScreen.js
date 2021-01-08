@@ -12,7 +12,10 @@ export const LoginScreen = ({history}) => {
     const handleLogin = () => {
         // history.push('/');
         // history.replace('/'); //al estar autenticado no puedes volver al login a menos que presioes logout
-        //se puede hacer destructuring en el use cotnext => ej: en el componente navBar ;)
+        //se puede hacer destructuring en el use cotnext => ej: en el componente navBar hay un ejemplo ;)
+        const lastPath = localStorage.getItem('lastPath') || '/';
+        console.log(lastPath)
+
         const user = {
             name: 'Camilo Fuentes',
         }
@@ -20,8 +23,9 @@ export const LoginScreen = ({history}) => {
             type: types.login,
             payload: user
         }
-        history.replace('/');
         dispatch(action);
+        history.replace(lastPath);
+
 
     }
     
