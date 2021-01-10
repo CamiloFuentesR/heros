@@ -12,6 +12,7 @@ export const PublicRouter = ({
 
 ) => {
     return (
+        
         <Route {...rest}
             component={(props) => (
                 //pregunta si esta autenticado

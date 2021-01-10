@@ -186,9 +186,7 @@
     span{
         margin-top: -0.1px;
     }
-
-    .nav3{
-    }
+    
     .logout{
         display: grid;
     }
@@ -221,7 +219,7 @@
     .nav12{
         display: grid;
         text-align: left;
-        grid-template-columns: 1fr 1fr 1fr 7fr 2fr 1fr  ;
+        grid-template-columns: 1fr 1fr 1fr 10.5fr 2fr 1fr  ;
     }
     .logout{
         display: grid;
