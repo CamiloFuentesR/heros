@@ -16,15 +16,15 @@ const init = () => {
 
 export const HeroesApp = () => {
     //                                   reducer,initialState
-    const [user, dispatch] = useReducer(authReducer, {}, init)
-
+    const [user, dispatch] = useReducer(authReducer, {}, init);
+    console.log(user)
     useEffect(() => {
         localStorage.setItem('user', JSON.stringify(user))
     
     }, [user]);
-
+    console.log(user)
     return (
-        //le estoy pasando el reducer a traves de un context a toda la aplicacion debido a que es un high order component
+        //le estoy pasando el reducer a traves de un context a toda la aplicacion debido a que es un high order component   
         <AuthContext.Provider value={{user,dispatch}}>
             <AppRouter />
         </AuthContext.Provider>

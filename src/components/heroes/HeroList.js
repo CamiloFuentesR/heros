@@ -4,6 +4,7 @@ import { HeroCard } from './HeroCard.js'
 
 export const HeroList = ({ publisher }) => {
     // const heros = getHerosByPublisher(publisher)
+    console.log(publisher)
 
     //si cambi l publisher entones se renderiza de nuevo, de lo contrario se carga la info guardada
     const heros =useMemo(() => getHerosByPublisher(publisher), [publisher])

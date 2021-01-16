@@ -7,7 +7,7 @@ import { types } from "../types/types";
 
 export const authReducer = (state = {}, action) => {
 
-    const {name} = action.payload;
+    const {name} = action.payload; // para guardar el nombre una vez que ha hecho logout
     switch (action.type) {
         case types.login:
             return{
@@ -16,7 +16,7 @@ export const authReducer = (state = {}, action) => {
             }
         case types.logout:
             return{
-                name,
+                name,//no se usa, yo lo hice como ej:
                 logged: false
             }
             
