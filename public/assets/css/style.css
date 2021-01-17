@@ -203,19 +203,25 @@
 
  @media (min-width: 1001px) {
     .responsive{
-        min-width: 33%;
+        min-width: 30% !important ;
+        min-height: 185px !important;
+        
     }
-    .card{
-        min-height: 200px;
-    }
-  
-    .search .responsive{
-        /* background-color: blue; */
-        min-width: 100%;
-    }
-    .search .card{
-        min-width: 30%;
-    }
+  .search{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+ 
+   .search .responsive{
+       /* background-color: blue; */
+       min-width: 100%;
+       align-content: center;
+   }
+   .search .card{
+       min-width: 100% !important;
+       margin-right: -200px;
+
+   }
     .nav12{
         display: grid;
         text-align: left;
